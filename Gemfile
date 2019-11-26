@@ -67,4 +67,7 @@ gem 'devise'
 #Table_Print
 gem "table_print"
 
+#.env
+gem 'dotenv-rails'
+
 gem "letter_opener", :group => :development
