@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/7057524a5c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+<!--   <link href="carousel.css" rel="stylesheet"> -->
+
+
+    <title>qt kitties</title>
+    
+</head>
+
+<body class="bodybg text">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <i class="fas fa-paw fa-lg"></i>          
+        <a class="navbar-brand" href="#">qtKitties</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                   <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </li>
+            </ul>
+            <div class="social-nw my-2 my-md-0">
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </div>
+          </div>
+    </nav>
+  </header>
+<!--
+              <div class="jumbotron text-center">
+                    <h3 class="text-white">La selection des chatons mignons</h3>
+                    <button type="button" class="text-white btn btn-warning">MEEEW</button>
+              
+                    </div>
+--> 
+ 
+<!-- un carousel, je veux faire défiler des images sur la page d'accueil avec possibilité d'en voir plus -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="kittens.jpg" width="100%">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>La photo du jour</h1>
+              <p>Que peuvent donc faire ces 2 adorables chatons?</p>
+              <p><a class="btn btn-lt" href="#" role="button">Voir plus</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  <script src="script.js"></script>
+
+  <form class="newsletter">
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <br>
+    <a>Inscris toi à la newsletter pour recevoir un max de bons plans</a>
+  </div>
+  </form>
+
+
+
+<!-- les derniers "arrivages" de photos -->
+  <h1><p class="titre text-center">Nouveautés</p></h1>
+  
+  <div class="nouveautés">  
+      <div class="col-md-3">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative cells">
+          <div class="col p-3 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2">Noël</strong>
+              <a>(reservé aux abonnés)</a>
+              <!--
+              <h3 class="mb-0"></h3>
+              <div class="mb-1 text-muted"></div>
+              
+              <p class="mb-auto">void</p>
+              <a href="#" class="stretched-link">Lire l'article</a>
+              -->
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="img"><img src="xmascat.jpg" class="img-fluid" alt="Responsive image"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative cells">
+          <div class="col p-3 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2">Les chats marrants</strong>
+            <a>(reservé aux abonnés)</a>
+              <!--
+              <h3 class="mb-0"></h3>
+              <div class="mb-1 text-muted"></div>
+        
+              <p class="mb-auto">void</p>
+              <a href="#" class="stretched-link">Lire l'article</a>
+              -->
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="img"><img src="funnycat.jpg" class="img-fluid" alt="Responsive image"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative cells">
+          <div class="col p-3 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2">Chat-rette</strong>
+            <a>(accès libre)</a>
+              <!--
+              <h3 class="mb-0"></h3>
+              <div class="mb-1 text-muted"></div>
+        
+              <p class="mb-auto">void</p>
+              <a href="#" class="stretched-link">Lire l'article</a>
+              -->
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="img"><img src="charette.jpg" class="img-fluid" alt="Responsive image"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+            
+
+
+
+
+
+
+
+
+
+<!-- les differents abo -->
+      <h1><p class="titre text-center">Offres</p></h1>
+      <div class="container">
+              <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">One day, one pic</h4>
+                  </div>
+                  <div class="card-body">
+                        <h1 class="card-title pricing-card-title">15 kittidollars <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Chaque matin</li>
+                      <li>réveillez-vous</li>
+                      <li>avec cutitude</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block">Need !</button>
+                  </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">La box mensuelle</h4>
+                  </div>
+                  <div class="card-body">
+                        <h1 class="card-title pricing-card-title">60 kittidollars <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Chaque mois</li>
+                      <li>recevez les plus belles photos</li>
+                      <li>et les accessoires les plus useless</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block">Je craque</button>
+                  </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Le worst of</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"> only 1 kittidollar <small class="text-muted">/ ko</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Une selection</li>
+                      <li>random de chats</li>
+                      <li>super vilains</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block">J'suis iencli</button>
+                  </div>
+                </div>
+              </div>
+
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Copyright, infos diverses</span>
+      </div>
+    </footer>
+  </body>
+</html>
