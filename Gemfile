@@ -71,3 +71,7 @@ gem "table_print"
 gem 'dotenv-rails'
 
 gem "letter_opener", :group => :development
+
+#Gem Stripe payements
+gem 'stripe'
+
