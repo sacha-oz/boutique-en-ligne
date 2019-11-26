@@ -63,15 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Devise
 gem 'devise'
-
-#Table_Print
-gem "table_print"
-
-#.env
-gem 'dotenv-rails'
-
-gem "letter_opener", :group => :development
-
-#Gem Stripe payements
-gem 'stripe'
-
+gem 'faker'
+gem 'table_print'

@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+20.times do
+	Item.create(title: Faker::Lorem.sentence, description: Faker::Lorem.paragraph, price: Faker::Number.decimal, image_url: ?)
+end
+puts "20 items viennent d'etre creer"
