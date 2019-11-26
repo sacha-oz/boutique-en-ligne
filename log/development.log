@@ -328,3 +328,273 @@ Processing by ChargesController#new as HTML
 Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-11-25 15:59:03 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (36.3ms)
+Completed 200 OK in 384ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 15:59:09 +0100
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (11.6ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 16:02:55 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (8.8ms)
+Completed 200 OK in 52ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/charges" for ::1 at 2019-11-25 16:03:31 +0100
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ny1DJIyNuPH/wVyO2QNoZRuN49xMuLSgA/Y0q3ciAKS11uoyjX6KF6R84OgAFcGxi3eMTu0c0oST2KdwFxHDMw==", "stripeToken"=>"tok_1Fij64KNlshWqTFdIgqdm0g0", "stripeTokenType"=>"card", "stripeEmail"=>"test@test.com"}
+  Rendering charges/create.html.erb within layouts/charges
+  Rendered charges/create.html.erb within layouts/charges (0.6ms)
+Completed 200 OK in 1796ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 16:04:13 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (6.5ms)
+Completed 200 OK in 54ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 16:18:15 +0100
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (3.5ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 16:24:59 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (3.7ms)
+Completed 200 OK in 45ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-25 16:25:30 +0100
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.5ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (18.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCarts (20191126085507)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (77.4ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191126085507_create_carts.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_user_id" ON "carts"  ("user_id")[0m
+  ↳ db/migrate/20191126085507_create_carts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191126085507"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateJoinCartItems (20191126090054)
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (39.4ms)[0m  [1m[35mCREATE TABLE "join_cart_items" ("id" bigserial primary key, "cart_id" bigint, "item_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_8061af8427"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+, CONSTRAINT "fk_rails_c70167bde2"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+)[0m
+  ↳ db/migrate/20191126090054_create_join_cart_items.rb:3
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateJoinCartItems (20191126090054)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "join_cart_items" ("id" bigserial primary key, "cart_id" bigint, "item_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_8061af8427"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+, CONSTRAINT "fk_rails_c70167bde2"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+)[0m
+  ↳ db/migrate/20191126090054_create_join_cart_items.rb:3
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateJoinCartItems (20191126090054)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (28.9ms)[0m  [1m[35mCREATE TABLE "join_cart_items" ("id" bigserial primary key, "cart_id" bigint, "item_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_8061af8427"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+, CONSTRAINT "fk_rails_c70167bde2"
+FOREIGN KEY ("item_id")
+  REFERENCES "items" ("id")
+)[0m
+  ↳ db/migrate/20191126090054_create_join_cart_items.rb:3
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (14.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (135.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "boutique-en-ligne_development"[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (130.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "boutique-en-ligne_test"[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (418.7ms)[0m  [1m[35mCREATE DATABASE "boutique-en-ligne_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (279.4ms)[0m  [1m[35mCREATE DATABASE "boutique-en-ligne_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20191125111428)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191125111428_devise_create_users.rb:5
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20191125111428_devise_create_users.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20191125111428_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191125111428"]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-26 09:29:16.089862"], ["updated_at", "2019-11-26 09:29:16.089862"]]
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4820587163080779825)[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-11-26 10:42:42 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Tanguy/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (8.8ms)
+Completed 200 OK in 43ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for ::1 at 2019-11-26 10:42:48 +0100
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (2.0ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
