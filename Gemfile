@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
@@ -64,5 +66,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Devise
 gem 'devise'
 
+#Table_Print
+gem "table_print"
+
+#.env
+gem 'dotenv-rails'
+
+gem "letter_opener", :group => :development
+
 #Gem Stripe payements
 gem 'stripe'
+
